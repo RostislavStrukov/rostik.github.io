@@ -8,8 +8,8 @@ function pow(a, n) {
     	return result;
 }
 
-var a = prompt("a?", '');
-var n = prompt("n?", '');
+var a = prompt("Введите число", '');
+var n = prompt("Введите степень числа", '');
 
 if (n <= 1) {
 	alert ('Введите степень' + n + 'неправильно');
