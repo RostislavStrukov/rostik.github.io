@@ -704,8 +704,7 @@ body {
 		font-size: 14px;
 		color: #fff;
 		font-size: 18px;
-		color: #edbfff;
-		
+		color: #edbfff;	
 	}
 	.slider-box-item-content-text {
 		display: none;
@@ -725,7 +724,6 @@ body {
 		background: url(../img/iphone.png);
 		background-size: 100% 100%;
 	}
-
 	.iphone-link {
 		display: table;
 		margin: 108px 0 0 95px;
