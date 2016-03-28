@@ -49,19 +49,19 @@
 
 	var elementAnswer = document.createElement ('p');
 		elementAnswer.classList.add('test-form-question-answer');
-		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant11">Вариант ответа №1</input></label>';
+		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant11" name="box">Вариант ответа №1</input></label>';
 	var form = document.querySelectorAll('.test-form-question');
 		form[0].appendChild(elementAnswer);
 
 	var elementAnswer = document.createElement ('p');
 		elementAnswer.classList.add('test-form-question-answer');
-		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant12">Вариант ответа №2</input></label>';
+		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant12" name="box">Вариант ответа №2</input></label>';
 	var form = document.querySelectorAll('.test-form-question');
 		form[0].appendChild(elementAnswer);
 
 	var elementAnswer = document.createElement ('p');
 		elementAnswer.classList.add('test-form-question-answer');
-		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant13">Вариант ответа №3</input></label>';
+		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant13" name="box">Вариант ответа №3</input></label>';
 	var form = document.querySelectorAll('.test-form-question');
 		form[0].appendChild(elementAnswer);
 
@@ -69,19 +69,19 @@
 
 	var elementAnswer = document.createElement ('p');
 		elementAnswer.classList.add('test-form-question-answer');
-		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant21">Вариант ответа №1</input></label>';
+		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant21" name="box">Вариант ответа №1</input></label>';
 	var form = document.querySelectorAll('.test-form-question');
 		form[1].appendChild(elementAnswer);
 
 	var elementAnswer = document.createElement ('p');
 		elementAnswer.classList.add('test-form-question-answer');
-		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant22">Вариант ответа №2</input></label>';
+		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant22" name="box">Вариант ответа №2</input></label>';
 	var form = document.querySelectorAll('.test-form-question');
 		form[1].appendChild(elementAnswer);
 
 	var elementAnswer = document.createElement ('p');
 		elementAnswer.classList.add('test-form-question-answer');
-		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant23">Вариант ответа №3</input></label>';
+		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant23" name="box">Вариант ответа №3</input></label>';
 	var form = document.querySelectorAll('.test-form-question');
 		form[1].appendChild(elementAnswer);	
 	
@@ -89,19 +89,19 @@
 
 	var elementAnswer = document.createElement ('p');
 		elementAnswer.classList.add('test-form-question-answer');
-		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant31">Вариант ответа №1</input></label>';
+		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant31" name="box">Вариант ответа №1</input></label>';
 	var form = document.querySelectorAll('.test-form-question');
 		form[2].appendChild(elementAnswer);
 
 	var elementAnswer = document.createElement ('p');
 		elementAnswer.classList.add('test-form-question-answer');
-		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant32">Вариант ответа №2</input></label>';
+		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant32" name="box">Вариант ответа №2</input></label>';
 	var form = document.querySelectorAll('.test-form-question');
 		form[2].appendChild(elementAnswer);
 
 	var elementAnswer = document.createElement ('p');
 		elementAnswer.classList.add('test-form-question-answer');
-		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant33">Вариант ответа №3</input></label>';
+		elementAnswer.innerHTML = '<label><input type="checkbox" id="variant" value="variant33" name="box">Вариант ответа №3</input></label>';
 	var form = document.querySelectorAll('.test-form-question');
 		form[2].appendChild(elementAnswer);
 
