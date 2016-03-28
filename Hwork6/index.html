@@ -64,10 +64,65 @@
 			</div>
 		</div> <!-- end navigation menu -->
 		<!-- box search -->
-		<div class="search">
-		</div> <!-- end box search -->
+		<form class="search">
+			<div class="search-item-box-right">
+				<p class="search-item-box-right-disks">Диски:</p>
+				<p class="search-item-box-right-carsearch">Поиск по автомобилю</p>
+				<p class="search-item-box-right-tires">Шины:</p>
+				<div class="search-item-box-right-filter">
+					<span class="search-item-box-right-filter-firstword">Марка</span>
+					<span class="search-item-box-right-filter-secondword">авто:</span>
+					<select class="search-item-box-right-filter-select">
+						<option value="Все">Все</option>
+						<option value="Skoda">Skoda</option>
+						<option value="Toyota">Toyota</option>
+						<option value="BMW">BMW</option>
+						<option value="Mercedes">Mercedes</option>
+						<option value="AUDI">AUDI</option>
+					</select>
+					<!-- <span class="search-item-box-right-filter-firstword">Модель</span>
+					<br>
+					<span class="search-item-box-right-filter-secondword">автомобиля:</span>
+					<select class="search-item-box-right-filter-select">
+						<option value="Все">Все</option>
+						<option value="Skoda">Skoda</option>
+						<option value="Toyota">Toyota</option>
+						<option value="BMW">BMW</option>
+						<option value="Mercedes">Mercedes</option>
+						<option value="AUDI">AUDI</option>
+					</select> -->
+					<!-- <span class="search-item-box-right-filter-firstword">Год выпуска</span>
+					<br>
+					<span class="search-item-box-right-filter-secondword">автомобиля:</span>
+					<select class="search-item-box-right-filter-select">
+						<option value="Все">Все</option>
+						<option value="Skoda">Skoda</option>
+						<option value="Toyota">Toyota</option>
+						<option value="BMW">BMW</option>
+						<option value="Mercedes">Mercedes</option>
+						<option value="AUDI">AUDI</option>
+					</select> -->
+					<!-- <span class="search-item-box-right-filter-firstword">Комплектация</span>
+					<span class="search-item-box-right-filter-secondword"></span>
+					<select class="search-item-box-right-filter-select">
+						<option value="Все">Все</option>
+						<option value="Skoda">Skoda</option>
+						<option value="Toyota">Toyota</option>
+						<option value="BMW">BMW</option>
+						<option value="Mercedes">Mercedes</option>
+						<option value="AUDI">AUDI</option>
+					</select> -->
+				</div>
+			</div>
+			<div class="search-item-box-2">
+				
+			</div>
+			<div class="search-item-box-3">
+				
+			</div>
+		</form> <!-- end box search -->
 		<!-- left side -->
-		<div class="catalog">
+		<form class="catalog">
 			<div class="name_catalog_head">
 				<p class="text_name">КАТАЛОГ&nbspПРОДУКЦИИ</p>
 			</div>
@@ -104,7 +159,7 @@
 					<li><a href="#" class="link_name">Наименование&nbsp4</a></li>
 				</ul>
 			</div>
-		</div> <!-- end left side -->
+		</form> <!-- end left side -->
 		<!-- content -->
 		<div class="content">
 			<div class="content_item-left">
@@ -181,7 +236,7 @@
 			</div>
 		</div> <!-- end content -->
 		<!-- right side -->
-		<div class="catalog__2">
+		<form class="catalog__2">
 			<div class="name_catalog_head">
 				<p class="text_name">БРЕНДЫ</p>
 			</div>
@@ -190,15 +245,15 @@
 			</div>
 			<div class="check_box">
 				<div class="check_item">
-					<input type="checkbox" id="brend_1" value="#">
+					<input type="checkbox" id="brend_1" value="brand1" name="tire">
 						<label for="brend_1">Бренд&nbsp1</label>
 				</div>
 				<div class="check_item">
-					<input type="checkbox" id="brend_2" value="#">
+					<input type="checkbox" id="brend_2" value="brand2" name="tire">
 						<label for="brend_2">Бренд&nbsp2</label>
 				</div>
 				<div class="check_item">
-					<input type="checkbox" id="brend_3" value="#">
+					<input type="checkbox" id="brend_3" value="brand3" name="tire">
 						<label for="brend_3">Бренд&nbsp3</label>
 				</div>
 			</div>
@@ -207,20 +262,20 @@
 			</div>
 			<div class="check_box">
 				<div class="check_item">
-					<input type="checkbox" id="brend_4" value="#">
+					<input type="checkbox" id="brend_4" value="brand4" name="tire">
 						<label for="brend_4">Бренд&nbsp1</label>
 				</div>
 				<div class="check_item">
-					<input type="checkbox" id="brend_5" value="#">
+					<input type="checkbox" id="brend_5" value="brand5" name="tire">
 						<label for="brend_5">Бренд&nbsp2</label>
 				</div>
 				<div class="check_item">
-					<input type="checkbox" id="brend_6" value="#">
+					<input type="checkbox" id="brend_6" value="brand6" name="tire">
 						<label for="brend_6">Бренд&nbsp3</label>
 				</div>
 			</div>
-		</div>
-			<input type="submit" value="ВЫБРАТЬ" class="button">
+		</form>
+			<input type="submit" value="ВЫБРАТЬ" class="button" name="tires">
 			</input>
 		<div class="space"></div>
 		<div class="brends">

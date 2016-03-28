@@ -200,6 +200,84 @@ body {
 
 /*END BOX SEARCH*/
 
+/*SEARCH*/
+
+.search-item-box-right {
+	float: left;
+	display: block;
+	width: 414px;
+	height: 133px;
+	border: 1px solid #b0b0b1;
+	border-radius: 20px;
+	margin: 2px 0 0 4px;
+	box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.75);
+}
+.search-item-box-2 {
+	float: left;
+	display: block;
+	width: 190px;
+	height: 133px;
+	border: 1px solid #b0b0b1;
+	border-radius: 20px;
+	margin: 3px 0 0 14px;
+	box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.75);
+}
+.search-item-box-3 {
+	float: left;
+	display: block;
+	width: 268px;
+	height: 133px;
+	border: 1px solid #b0b0b1;
+	border-radius: 20px;
+	margin: 2px 0 0 10px;
+	box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.75);
+}
+.search-item-box-right-disks {
+ 	float: left;
+ 	margin: 4px 0 0 21px;
+ 	font-size: 10px; 
+ 	color: #154468;
+ 	font-weight: bold;
+}
+.search-item-box-right-carsearch {
+	float: left;
+ 	margin: 0 0 0 70px;
+ 	font-size: 12px; 
+ 	color: #154468;
+ 	font-weight: bold;
+}
+.search-item-box-right-tires {
+	float: left;
+ 	margin: 2px 0 0 89px;
+ 	font-size: 10px; 
+ 	color: #154468;
+ 	font-weight: bold;
+}
+.search-item-box-right-filter {
+	display: block;
+	width: 198px;
+}
+.search-item-box-right-filter-firstword {
+	/*float: left;*/
+	margin: 9px 0 0 19px;
+	font-size: 10px;
+}
+.search-item-box-right-filter-secondword {
+	/*float: left;*/
+	margin: 9px 0 0 3px;
+	font-size: 10px;
+	color: #77858b;
+}
+.search-item-box-right-filter-select {
+	/*float: left;*/
+	width: 102px;
+	height: 18px;
+	margin: 5px 0 0 19px;
+	font-size: 10px;
+}
+
+/*END SEARCH*/
+
 /*LEFT SIDE*/
 
 .catalog {
