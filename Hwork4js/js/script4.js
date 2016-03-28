@@ -9,17 +9,17 @@
 	// Заголовок формы
 
 	var elementHead = document.createElement ('p');
-		element.classList.add('test-head');
-		element.innerHTML = 'Тест по программированию';
-	var body = document.querySelector('.test');
-		body.appendChild(elementHead);
+		elementHead.classList.add('test-head');
+		elementHead.innerHTML = 'Тест по программированию';
+	var div = document.querySelector('.test');
+		div.appendChild(elementHead);
 		
 	// Форма
 
 	var elementForm = document.createElement ('form');
 		elementForm.classList.add('test-form');
-	var body = document.querySelector('body');
-		body.appendChild(elementForm);
+	var div = document.querySelector('div');
+		div.appendChild(elementForm);
 
 	// Вопрос №1
 
@@ -109,13 +109,8 @@
 
 	var elementButton = document.createElement ('div');
 		elementButton.classList.add('test-button');
-		elementButton.innerHTML = '<label><input type="button" id="variant" value="Проверить мои результаты"></input></label>';
+		elementButton.innerHTML = '<label><input type="button" id="test-button" value="Проверить мои результаты"></input></label>';
 	var form = document.querySelectorAll('.test-form-question');
 		form[2].appendChild(elementButton);
 
-	console.log(body);
-	// Стилизация
-
-	// var element = document.body.children[0];
-
-	// div.style.marginLeft = 200px
+	console.log(body);	
