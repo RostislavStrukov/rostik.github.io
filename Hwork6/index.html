@@ -65,14 +65,13 @@
 		</div> <!-- end navigation menu -->
 		<!-- box search -->
 		<form class="search">
-			<div class="search-item-box-right">
-				<p class="search-item-box-right-disks">Диски:</p>
-				<p class="search-item-box-right-carsearch">Поиск по автомобилю</p>
-				<p class="search-item-box-right-tires">Шины:</p>
-				<div class="search-item-box-right-filter">
-					<span class="search-item-box-right-filter-firstword">Марка</span>
-					<span class="search-item-box-right-filter-secondword">авто:</span>
-					<select class="search-item-box-right-filter-select">
+			<div class="search-item-box-left">
+				<p class="search-item-box-left-disks">Диски:</p>
+				<p class="search-item-box-left-carsearch">Поиск по автомобилю</p>
+				<p class="search-item-box-left-tires">Шины:</p>
+				<div class="search-item-box-left-filter-left">
+					<p class="search-item-box-left-filter-firstword-brend">Марка<span class="search-item-box-left-filter-secondword-brend">авто:</span></p>
+					<select class="search-item-box-left-filter-select">
 						<option value="Все">Все</option>
 						<option value="Skoda">Skoda</option>
 						<option value="Toyota">Toyota</option>
@@ -80,45 +79,149 @@
 						<option value="Mercedes">Mercedes</option>
 						<option value="AUDI">AUDI</option>
 					</select>
-					<!-- <span class="search-item-box-right-filter-firstword">Модель</span>
-					<br>
-					<span class="search-item-box-right-filter-secondword">автомобиля:</span>
-					<select class="search-item-box-right-filter-select">
+					<p class="search-item-box-left-filter-firstword-model">Модель<br><span class="search-item-box-left-filter-secondword-model">автомобиля:</span></p>
+					<select class="search-item-box-left-filter-select">
 						<option value="Все">Все</option>
 						<option value="Skoda">Skoda</option>
 						<option value="Toyota">Toyota</option>
 						<option value="BMW">BMW</option>
 						<option value="Mercedes">Mercedes</option>
 						<option value="AUDI">AUDI</option>
-					</select> -->
-					<!-- <span class="search-item-box-right-filter-firstword">Год выпуска</span>
-					<br>
-					<span class="search-item-box-right-filter-secondword">автомобиля:</span>
-					<select class="search-item-box-right-filter-select">
+					</select>
+					<p class="search-item-box-left-filter-firstword-year">Год выпуска<br><span class="search-item-box-left-filter-secondword-year">автомобиля:</span></p>
+					<select class="search-item-box-left-filter-select-year">
 						<option value="Все">Все</option>
 						<option value="Skoda">Skoda</option>
 						<option value="Toyota">Toyota</option>
 						<option value="BMW">BMW</option>
 						<option value="Mercedes">Mercedes</option>
 						<option value="AUDI">AUDI</option>
-					</select> -->
-					<!-- <span class="search-item-box-right-filter-firstword">Комплектация</span>
-					<span class="search-item-box-right-filter-secondword"></span>
-					<select class="search-item-box-right-filter-select">
+					</select>
+					<span class="search-item-box-left-filter-firstword-brend">Комплектация</span>
+					<select class="search-item-box-left-filter-select-kit">
 						<option value="Все">Все</option>
 						<option value="Skoda">Skoda</option>
 						<option value="Toyota">Toyota</option>
 						<option value="BMW">BMW</option>
 						<option value="Mercedes">Mercedes</option>
 						<option value="AUDI">AUDI</option>
-					</select> -->
+					</select>
 				</div>
+				<div class="search-item-box-left-filter-right">
+					<p class="search-item-box-left-filter-firstword-brend">Марка<span class="search-item-box-left-filter-secondword-brend">авто:</span></p>
+					<select class="search-item-box-left-filter-select">
+						<option value="Все">Все</option>
+						<option value="Skoda">Skoda</option>
+						<option value="Toyota">Toyota</option>
+						<option value="BMW">BMW</option>
+						<option value="Mercedes">Mercedes</option>
+						<option value="AUDI">AUDI</option>
+					</select>
+					<p class="search-item-box-left-filter-firstword-model">Модель<br><span class="search-item-box-left-filter-secondword-model">автомобиля:</span></p>
+					<select class="search-item-box-left-filter-select">
+						<option value="Все">Все</option>
+						<option value="Skoda">Skoda</option>
+						<option value="Toyota">Toyota</option>
+						<option value="BMW">BMW</option>
+						<option value="Mercedes">Mercedes</option>
+						<option value="AUDI">AUDI</option>
+					</select>
+					<p class="search-item-box-left-filter-firstword-year">Год выпуска<br><span class="search-item-box-left-filter-secondword-year">автомобиля:</span></p>
+					<select class="search-item-box-left-filter-select-year">
+						<option value="all">Все</option>
+						<option value="2010">2010</option>
+						<option value="2011">2011</option>
+						<option value="2012">2012</option>
+						<option value="2013">2013</option>
+						<option value="2014">2014</option>
+					</select>
+					<span class="search-item-box-left-filter-firstword-brend">Комплектация</span>
+					<select class="search-item-box-left-filter-select-kit">
+						<option value="Все">Все</option>
+						<option value="Skoda">Skoda</option>
+						<option value="Toyota">Toyota</option>
+						<option value="BMW">BMW</option>
+						<option value="Mercedes">Mercedes</option>
+						<option value="AUDI">AUDI</option>
+					</select>
+				</div>
+				<input type="submit" value="ПОИСК..." class="form-search"></input>
 			</div>
-			<div class="search-item-box-2">
-				
+			<div class="search-item-box-middle">
+				<p class="search-item-box-middle-head">поиск шин</p>
+				<p class="search-item-box-middle-size">Размер:</p>
+				<select class="search-item-box-middle-filter-select-size">
+						<option value="Все">Все</option>
+						<option value="185">185</option>
+						<option value="195">195</option>
+						<option value="205">205</option>
+						<option value="225">225</option>
+				</select>
+				<span>/</span>
+				<select class="search-item-box-middle-filter-select-size">
+						<option value="Все">Все</option>
+						<option value="60">60</option>
+						<option value="65">65</option>
+						<option value="55">55</option>
+						<option value="50">50</option>
+				</select>
+				<p class="search-item-box-middle-radius">R</p>
+				<select class="search-item-box-middle-filter-select-radius">
+						<option value="Все">Все</option>
+						<option value="60">14</option>
+						<option value="65">15</option>
+						<option value="55">16</option>
+						<option value="50">17</option>
+				</select>
+				<p class="search-item-box-middle-season">Сезон:</p>
+				<input type="checkbox" name="winter" value="winter" id="season"></input>
+					<label class="sason-label" for="season">зима</label>
+				<input type="checkbox" name="summer" value="summer" id="season"></input>
+					<label class="sason-label" for="season">лето</label>
+				<input type="checkbox" name="all-season" value="all-season" id="season"></input>
+					<label class="sason-label" for="season">всесезон</label>
+				<input type="submit" value="ПОИСК..." class="form-search-middle"></input>
 			</div>
-			<div class="search-item-box-3">
-				
+			<div class="search-item-box-right">
+				<div class="search-item-box-right-filter-right">
+					<p class="search-item-box-right-disk-head">поиск дисков</p>
+					<p class="search-item-box-right-filter-firstword-diametr">Диаметр<span class="search-item-box-right-filter-secondword-disk">диска:</span></p>
+					<select class="search-item-box-right-filter-select">
+						<option value="all">Все</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+					</select>
+					<p class="search-item-box-left-filter-firstword-model">Колличество<br><span class="search-item-box-left-filter-secondword-model">крепежных<br>отверстий:</span></p>
+					<select class="search-item-box-right-filter-select-quantity">
+						<option value="Все">Все</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+					<p class="search-item-box-left-filter-firstword-year">Диаметр<br><span class="search-item-box-left-filter-secondword-year">распложения<br>крепежных<br>отверстий:</span></p>
+					<select class="search-item-box-left-filter-select-diametr">
+						<option value="Все">Все</option>
+						<option value="112">112</option>
+						<option value="115">115</option>
+					</select>
+				</div>
+				<div class="search-item-box-right-filter-left">
+					<p class="search-item-box-right-filter-left-firstword">ДЦО<br><span class="search-item-box-right-filter-left-secondword">(диаметр<br>центрального<br>отверстия):</span></p>
+					<select class="search-item-box-right-filter-left-select">
+						<option value="Все">Все</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+					<p class="search-item-box-right-filter-left-firstword">ET<br><span class="search-item-box-right-filter-left-secondword">(вылет диска):</span></p>
+					<select class="search-item-box-right-filter-left-select">
+						<option value="Все">Все</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+					<input type="submit" value="ПОИСК..." class="form-search-right"></input>
+				</div>
 			</div>
 		</form> <!-- end box search -->
 		<!-- left side -->
@@ -245,15 +348,15 @@
 			</div>
 			<div class="check_box">
 				<div class="check_item">
-					<input type="checkbox" id="brend_1" value="brand1" name="tire">
+					<input type="checkbox" id="brend_1" value="brend1" name="tire">
 						<label for="brend_1">Бренд&nbsp1</label>
 				</div>
 				<div class="check_item">
-					<input type="checkbox" id="brend_2" value="brand2" name="tire">
+					<input type="checkbox" id="brend_2" value="brend2" name="tire">
 						<label for="brend_2">Бренд&nbsp2</label>
 				</div>
 				<div class="check_item">
-					<input type="checkbox" id="brend_3" value="brand3" name="tire">
+					<input type="checkbox" id="brend_3" value="brend3" name="tire">
 						<label for="brend_3">Бренд&nbsp3</label>
 				</div>
 			</div>
@@ -262,15 +365,15 @@
 			</div>
 			<div class="check_box">
 				<div class="check_item">
-					<input type="checkbox" id="brend_4" value="brand4" name="tire">
+					<input type="checkbox" id="brend_4" value="brend4" name="tire">
 						<label for="brend_4">Бренд&nbsp1</label>
 				</div>
 				<div class="check_item">
-					<input type="checkbox" id="brend_5" value="brand5" name="tire">
+					<input type="checkbox" id="brend_5" value="brend5" name="tire">
 						<label for="brend_5">Бренд&nbsp2</label>
 				</div>
 				<div class="check_item">
-					<input type="checkbox" id="brend_6" value="brand6" name="tire">
+					<input type="checkbox" id="brend_6" value="brend6" name="tire">
 						<label for="brend_6">Бренд&nbsp3</label>
 				</div>
 			</div>

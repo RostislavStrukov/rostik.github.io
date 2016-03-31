@@ -189,7 +189,7 @@ body {
 
 /*END MENU NAVIGATION*/
 
-/*BOX SEARCH*/
+/*SEARCH*/
 
 .search {
 	clear: both;
@@ -198,11 +198,7 @@ body {
 	height: 150px;
 }
 
-/*END BOX SEARCH*/
-
-/*SEARCH*/
-
-.search-item-box-right {
+.search-item-box-left {
 	float: left;
 	display: block;
 	width: 414px;
@@ -212,7 +208,7 @@ body {
 	margin: 2px 0 0 4px;
 	box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.75);
 }
-.search-item-box-2 {
+.search-item-box-middle {
 	float: left;
 	display: block;
 	width: 190px;
@@ -222,7 +218,7 @@ body {
 	margin: 3px 0 0 14px;
 	box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.75);
 }
-.search-item-box-3 {
+.search-item-box-right {
 	float: left;
 	display: block;
 	width: 268px;
@@ -232,50 +228,247 @@ body {
 	margin: 2px 0 0 10px;
 	box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.75);
 }
-.search-item-box-right-disks {
+.search-item-box-left-disks {
  	float: left;
  	margin: 4px 0 0 21px;
  	font-size: 10px; 
  	color: #154468;
  	font-weight: bold;
 }
-.search-item-box-right-carsearch {
+.search-item-box-left-carsearch {
 	float: left;
  	margin: 0 0 0 70px;
  	font-size: 12px; 
  	color: #154468;
  	font-weight: bold;
 }
-.search-item-box-right-tires {
+.search-item-box-left-tires {
 	float: left;
  	margin: 2px 0 0 89px;
  	font-size: 10px; 
  	color: #154468;
  	font-weight: bold;
 }
-.search-item-box-right-filter {
+.search-item-box-left-filter-left {
 	display: block;
-	width: 198px;
+	width: 200px;
+	float: left;
+	clear: both;
 }
-.search-item-box-right-filter-firstword {
-	/*float: left;*/
-	margin: 9px 0 0 19px;
+.search-item-box-left-filter-right {
+	float: left;
+	display: block;
+
+}
+.search-item-box-left-filter-firstword-brend {
+	clear: both;
+	float: left;
+	margin: 6px 0 0 19px;
 	font-size: 10px;
 }
-.search-item-box-right-filter-secondword {
-	/*float: left;*/
+.search-item-box-left-filter-secondword-brend {
+	margin: 9px 0 0 3px;
+	font-size: 10px;
+	color: #77858b;
+}
+.search-item-box-left-filter-select {
+	float:left;
+	width: 102px;
+	height: 18px;
+	margin: 5px 0 0 16px;
+	font-size: 10px;
+}
+.search-item-box-left-filter-firstword-model {
+	clear: both;
+	float: left;
+	margin: 0 0 0 19px;
+	font-size: 10px;
+}
+.search-item-box-left-filter-secondword-model {
+	margin: 9px 0 0 0;
+	font-size: 10px;
+	color: #77858b;
+}
+.search-item-box-left-filter-firstword-year {
+	clear: both;
+	float: left;
+	margin: 0 0 0 19px;
+	font-size: 10px;
+}
+.search-item-box-left-filter-secondword-year {
+	margin: 9px 0 0 0;
+	font-size: 10px;
+	color: #77858b;
+}
+.search-item-box-left-filter-select-year {
+	float:left;
+	width: 60px;
+	height: 18px;
+	margin: 3px 0 0 16px;
+	font-size: 10px;
+}
+.search-item-box-left-filter-select-kit {
+	float:left;
+	width: 102px;
+	height: 18px;
+	margin: 3px 0 0 7px;
+	font-size: 10px;
+}
+.form-search {
+	float: right;
+	clear: both;
+	font-size: 10px;
+	font-style: italic;
+	border: none;
+	background: #fff;
+	text-decoration: underline;
+	margin: 4px 20px 0 0;
+	color: #154467;
+}
+.search-item-box-middle-head {
+	font-size: 12px;
+	color: #114165;
+	margin: 0 0 0 10px;
+	font-weight: bold;
+	display: table;
+}
+.search-item-box-middle-size {
+	font-size: 10px;
+	margin: 12px 0 0 13px;
+	float: left;
+}
+.search-item-box-middle-filter-select-size {
+	width: 45px;
+	height: 18px;
+	margin: 6px 5px 0 5px;
+	font-size: 10px;
+}
+.search-item-box-middle-radius {
+	float: left;
+	clear: both;
+	display: table;
+	font-size: 11px;
+	margin: 10px 0 0 45px;
+}
+.search-item-box-middle-filter-select-radius {
+	width: 45px;
+	height: 18px;
+	margin: 6px 5px 0 5px;
+	font-size: 10px;
+}
+.search-item-box-middle-season {
+	float: left;
+	clear: both;
+	font-size: 10px;
+	display: table;
+	margin: 4px 0 0 13px;
+}
+#season {
+	display: block;
+	float: left;
+	clear: both;
+	margin: -10px 0 12px 58px;
+}
+.sason-label {
+	font-size: 10px;
+	display: block;
+	margin: -11px 0 0 4px;
+	float: left;
+}
+.form-search-middle {
+	float: right;
+	clear: both;
+	border: none;
+	background: #fff;
+	text-decoration: underline;
+	font-size: 10px;
+	font-style: italic;
+	margin: -12px 17px 0 0;
+	color: #154467;
+}
+.search-item-box-right-disk-head {
+	font-size: 12px;
+	color: #114165;
+	margin: 0 0 0 10px;
+	font-weight: bold;
+	display: table;
+}
+.search-item-box-right-filter-firstword-diametr {
+	clear: both;
+	float: left;
+	margin: 8px 0 0 18px;
+	font-size: 10px;
+}
+.search-item-box-right-filter-secondword-disk {
 	margin: 9px 0 0 3px;
 	font-size: 10px;
 	color: #77858b;
 }
 .search-item-box-right-filter-select {
-	/*float: left;*/
-	width: 102px;
+	float:left;
+	width: 58px;
 	height: 18px;
-	margin: 5px 0 0 19px;
+	margin: 5px 0 0 16px;
+	font-size: 10px;
+}
+.search-item-box-right-filter-select-quantity {
+	float:left;
+	width: 58px;
+	height: 18px;
+	margin: 12px 0 0 29px;
+	font-size: 10px;
+}
+.search-item-box-left-filter-select-diametr {
+	float:left;
+	width: 58px;
+	height: 18px;
+	margin: 8px 0 0 26px;
 	font-size: 10px;
 }
 
+.search-item-box-right-filter-right {
+	display: block;
+	width: 175px;
+	display: table;
+	border-right: 1px solid #bdc6ca;
+	margin: 3px 0 0 0;
+	float: left; 
+}
+.search-item-box-right-filter-left {
+	float: left;
+	display: table;
+}
+.search-item-box-right-filter-left-firstword {
+	clear: both;
+	float: left;
+	margin: 2px 0 2px 12px;
+	font-size: 10px;
+
+}
+.search-item-box-right-filter-left-secondword {
+	margin: 0 0 0 0;
+	font-size: 10px;
+	color: #77858b;
+}
+.search-item-box-right-filter-left-select {
+	display: table;
+	clear: both;
+	font-size: 10px;
+	margin: 0 0 0 12px;
+	width: 56px;
+	height:16px;
+}
+.form-search-right {
+	float: right;
+	clear: both;
+	border: none;
+	background: #fff;
+	text-decoration: underline;
+	font-size: 10px;
+	font-style: italic;
+	margin: 3px 0 0 0;
+	color: #154467;
+}
 /*END SEARCH*/
 
 /*LEFT SIDE*/

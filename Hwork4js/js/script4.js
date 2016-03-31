@@ -1,5 +1,5 @@
- 	
- 	// Блок формы
+	
+	// Блок формы
 
  	var element = document.createElement ('div');
 		element.classList.add('test');
@@ -111,6 +111,4 @@
 		elementButton.classList.add('test-button');
 		elementButton.innerHTML = '<label><input type="button" id="test-button" value="Проверить мои результаты"></input></label>';
 	var form = document.querySelectorAll('.test-form-question');
-		form[2].appendChild(elementButton);
-
-	console.log(body);	
+		form[2].appendChild(elementButton);	
