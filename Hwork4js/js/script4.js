@@ -87,24 +87,24 @@ var app = {
 		 
 				 var answer = this.questions[i].answers[y];
 			 
-/* 				 var answer = document.createElement('p');
+ 				 var answer = document.createElement('p');
 					 answer.classList.add('answer-text');
 					 answer.innerHTML = this.questions[i].answers[y].text;
 				 var form = document.querySelector('form');
-					 form.appendChild(answer); */
+					 form.appendChild(answer); 
 			
 		
-				 var answer = document.createElement('label');
-					 answer.htmlFor = 'answer-text';
-				 var form = document.querySelector('form');
-					 form.appendChild(answer);
-				 var input = document.createElement('input');
-					 input.type = 'checkbox';
-					 input.value = 'answer';
-					 input.id = 'answer-text';
-					 input.innerHTML = this.questions[i].answers[y].text;
-				 var label = document.querySelectorAll('label')
-				     label.appendChild(input);	
+				 // var answer = document.createElement('label');
+					//  answer.htmlFor = 'answer-text';
+				 // var form = document.querySelector('form');
+					//  form.appendChild(answer);
+				 // var input = document.createElement('input');
+					//  input.type = 'checkbox';
+					//  input.value = 'answer';
+					//  input.id = 'answer-text';
+					//  input.innerHTML = this.questions[i].answers[y].text;
+				 // var label = document.querySelectorAll('label')
+				 //     label.appendChild(input);	
 
 			 console.log(answer);
 
