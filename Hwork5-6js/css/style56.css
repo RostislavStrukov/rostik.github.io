@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Tahoma;
+	background: #8fa1ae;
+}
+.timer-box {
+	width: 600px;
+	height: 260px;
+	background: #f2ae9b;
+	margin: 200px auto;
+	border: 6px solid #fc8f4c;
+	border-radius: 30px;
+	box-shadow: 4px 7px 5px 0px rgba(0,0,0,0.75);
+}
+.timer-box-text {
+	display: table;
+	margin: 45px auto;
+	font-size: 60px;
+	font-weight: bold;
+	color: #fff;
+}
+.timer-box-buttons {
+	display: table;
+ 	margin: 0 auto;
+}
+#timer-box-buttons-start-pause {
+	width: 80px;
+	height: 40px;
+	background: #f1363f;
+	border-radius: 8px;
+	border: none;
+	color: #fff;
+}
+#timer-box-button-reset {
+	width: 80px;
+	height: 40px;
+	margin: 0 0 0 100px;
+	background: #bbce4d;
+	border-radius: 8px;
+	border: none;
+	color: #fff;
+}
+/*#Pause {
+	width: 80px;
+	height: 40px;
+	background: #8d5157;
+	border-radius: 8px;
+	border: none;
+	color: #fff;
+}*/

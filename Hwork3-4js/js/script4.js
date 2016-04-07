@@ -98,6 +98,19 @@ var app = {
 					//  answer.htmlFor = 'answer-text';
 				 // var form = document.querySelector('form');
 					//  form.appendChild(answer);
+
+					
+					//for (var i = 0; i < label.length; i++) {
+					// var input = document.createElement('input');
+					//  input.type = 'checkbox';
+					//  input.value = 'answer';
+					//  input.id = 'answer-text';
+					//  input.innerHTML = this.questions[i].answers[y].text;
+					// label.appendChild(input);
+					// };
+
+
+
 				 // var input = document.createElement('input');
 					//  input.type = 'checkbox';
 					//  input.value = 'answer';
