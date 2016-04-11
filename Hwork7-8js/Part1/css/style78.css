@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Tahoma;
+	background: #8fa1ae;
+}
+.box-menu {
+	width: 800px;
+	height: 430px;
+	margin: 200px auto;
+}
+.menu li {
+	display: inline-block;
+	list-style-type: none;
+	width: 200px;
+	height: 30px;
+	background: #5f6365;
+	border: 1px solid #c4cccf;
+	border-bottom: none;
+	color: #e2e6e8;
+	padding: 0 0 0 0;
+}
+.menu .active {
+	background: #ecf1f3;
+	color: #4a4d4f;
+	padding: 0 0 0 0;
+}
+.block-content.active {
+	display: block;
+	width: 800px;
+	height: 400px;
+	background: #ecf1f3;
+}
+.block-content {
+	display: none;
+}
