@@ -1,0 +1,52 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: Tahoma, Arial;
+}
+
+.header {
+	display: block;
+	width: 100%;
+	height: 400px;
+	background: #929a9b;
+	overflow: hidden;
+}
+.header-title {
+	color: #e3cec4;
+	font-size: 100px;
+	font-weight: bold;
+	text-shadow: 4px 2px 1px rgba(150, 152, 152, 1);
+	display: table;
+	margin: 120px auto;
+}
+.menu-box {
+	width: 100%;
+	height: 50px;
+	background: #b36968;
+}
+.menu li {
+	display: inline-block;
+	width: 120px;
+	height: 50px;
+	padding: 0 20px 0 20px;
+	position: relative;
+}
+.submenu ul {
+	position: absolute;
+	left: 20px;
+}
+.submenu li {
+	display: block;
+	top: 20px;
+	height: 30px;
+	
+}
+.menu a {
+	text-decoration: none;
+	/*color: #fff;*/
+}
+.subsubmenu li {
+	display: none;
+}

@@ -681,5 +681,13 @@ body {
 	color: #7f4740;
 	letter-spacing: 0.5px;
 }
+#copy-link {
+	font-size: 10px;
+	color: #7f4740;
+	letter-spacing: 0.5px;
+}
+#copy-link:hover {
+	text-decoration: underline;
+}
 
 /*END FOOTER*/
