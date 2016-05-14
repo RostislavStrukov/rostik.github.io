@@ -1,0 +1,129 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.body {
+	display: block;
+	width:100%;
+  	height:100%;
+}
+#main {
+	/*Positioning*/
+	margin: 0 auto;
+	/*Display and Box Model*/
+	width: 966px;
+	font-family: sans-serif;
+}
+
+/*HEADER*/
+
+#header {
+	height: 130px;
+}
+.logo {
+	padding: 40px 0 40px; 
+}
+
+/*NAVIGATION*/
+
+.navitop li {
+	margin: 0 20px;
+	display: inline-block;
+	width: 96px;
+	vertical-align: middle;
+	list-style-type: none;
+	font-size: 11px;
+}
+.navigation {
+	background: #575757;
+}
+.navigation a:hover {
+	background: #434343;
+	border-right: 1px solid #838383;
+	border-left: 1px solid #838383;
+}
+#header .navigator {
+	width: 100%;
+}
+.navitop a {
+	display: block;
+	padding: 14px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
+/*SIDEBAR*/
+
+.sidebar {
+	float: left;
+	width: 250px;
+	margin: 40px 0;
+	font-size: 10px;
+}
+.menu li {
+	width: 100%;
+	border: 1px solid #c8c8c8;
+	list-style-type: none;
+}
+.menu a {
+	padding: 20px 0 20px 24px;
+	display: block;
+	text-decoration: none;
+	color: #7a7878;
+}
+.sidebar a:hover {
+	color: black;
+	position: relative; 
+    left: 8px;
+}
+
+/*CONTENT*/
+
+.content {
+	margin: 40px auto 0;
+	float: right;
+	position: relative;
+}
+.text {
+	width: 630px;
+	margin: 40px auto 40px;
+}
+
+/*FOOTER*/
+
+.footer {
+	clear: both;
+	width: 100%;
+	height: 40px;
+	background: #e1e1e1;
+}
+.navibottom li {
+	width: 100px;
+	height: 40px;
+	display: inline-block;
+	list-style-type: none;
+	margin: 0 24px;
+	font-size: 12px;
+}
+.navibottom a {
+	padding: 12px 0;
+	display: block;
+	text-decoration: none;
+	color: #5c5c5c;
+}
+.navibottom a:hover {
+	text-decoration: underline;
+}
+.navibottom {
+	width: 70%;
+	float: left;
+}
+.copy {
+	width: 25%;
+	height: 40px;
+	text-align: right;
+	float: right;
+	padding: 12px 24px 12px 0;
+	font-size: 12px;
+}
