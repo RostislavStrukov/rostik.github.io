@@ -29,7 +29,7 @@ Human.prototype = new Student;
 
 // создания экземпляров классов
 var newHuman = new Human();
-var newStudent = new Student();
+var newWorker = new Student();
 
 // вывод данных
 newHuman.study();
