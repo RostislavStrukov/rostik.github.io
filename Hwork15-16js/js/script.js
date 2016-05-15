@@ -24,17 +24,16 @@ function Student() {
 }
 
 // сохранение методов экземпляров классов 
-Student.prototype = new Worker;
-Human.prototype = new Student;
+Student.prototype = new Human;
+Worker.prototype = new Human;
 
 // создания экземпляров классов
-var newHuman = new Human();
-var newWorker = new Student();
+var newStudent = new Human();
+var newWorker = new Human();
 
 // вывод данных
-newHuman.study();
-console.log('newWorker.placeStudy', newWorker.placeStudy);
-console.log('newHuman.studyBursary', newHuman.studyBursary);
+console.log('newWorker.name', newWorker.name);
+console.log('newStudent.age', newStudent.age);
 
 // Human = {
 // 	name: 'Ivan',
