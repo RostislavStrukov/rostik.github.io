@@ -23,13 +23,13 @@ function Student() {
 	}
 }
 
-// создания экземпляров классов
-var newHuman = new Human();
-var newStudent = new Student();
-
 // сохранение методов экземпляров классов 
 Student.prototype = new Worker;
 Human.prototype = new Student;
+
+// создания экземпляров классов
+var newHuman = new Human();
+var newStudent = new Student();
 
 // вывод данных
 newHuman.study();
