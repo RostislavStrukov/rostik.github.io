@@ -9,10 +9,37 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
-	<form class="submit">
+	<form class="wraper">
+		<div class="header">
+			<ul class="header-logo">
+				<li>CUSTOM</li>
+				<li>GOOGLE</li>
+				<li>ENGINE</li>
+				<li>SEARCH</li>
+			</ul>
+		</div>
+		<!-- include custom search -->
+		<div class="google-serch-engine">
+			<script>
+		  		(function() {
+		    		var cx = '018289155852374326591:k6maoipy1ac';
+		    		var gcse = document.createElement('script');
+		    		gcse.type = 'text/javascript';
+		    		gcse.async = true;
+		    		gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+		    		var s = document.getElementsByTagName('script')[0];
+		    		s.parentNode.insertBefore(gcse, s);
+		  		})();
+			</script>
+			<!-- <gcse:searchbox gname="storesearch"></gcse:searchbox> -->
+			<!-- <gcse:searchresults gname="storesearch"></gcse:searchresults> -->
+			<gcse:search></gcse:search>
+		</div><!-- end include custom search -->
+	</form>
+	<!-- <form class="submit">
 		<div class="submit-input">
 			<input type="text" method="GET" class="search"></input>
 		</div>
 		<input type="submit" class="button">
-	</form>
+	</form> -->
 </body>

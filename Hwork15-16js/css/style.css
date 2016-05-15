@@ -20,3 +20,29 @@ body {
 .button {
 	margin: 20px 0 0 20px;
 }
+.header-logo li {
+	display: inline;
+}
+.header-logo :nth-child(1) {
+ 	color: #094adc;
+ 	font-size: 36px;
+}
+.header-logo :nth-child(2) {
+ 	color: #f31121;
+ 	font-size: 36px;
+}
+.header-logo :nth-child(3) {
+ 	color: #f1de07;
+ 	font-size: 36px;
+}
+.header-logo :nth-child(4) {
+ 	color: #37a109;
+ 	font-size: 36px;
+}
+.wraper {
+	margin: 20% auto;
+}
+.header {
+	display: table;
+	margin: 30px auto;
+}
