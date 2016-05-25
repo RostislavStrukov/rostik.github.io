@@ -276,57 +276,57 @@ var data = [
 
 $(function(){
 	
-  var str = JSON.stringify(data);
-	 console.log(str);
+  var str = JSON.stringify(data); // сохранение массива в str JSON
+	 console.log(str); 
 		
-  var arr = JSON.parse(str);
+  var arr = JSON.parse(str); // превращение str JSON в JS массив
 		console.log(arr);
 
-  var skills = _.map(arr, 'skills');
+  var skills = _.map(arr, 'skills'); // вытягиваем массив обьектов skills
     console.log(skills);
 
-  var cont = _.fromPairs(skills);
+  var cont = _.fromPairs(skills); // вытягиваем массив полей из массива skills
     console.log(cont);
 
-  var sort = _.sortBy(cont);
+  var sort = _.sortBy(cont); // сортируем совпадения и получаем skills
     console.log(sort);
 
-  var name = _.map(arr, 'name');
+  var name = _.map(arr, 'name'); // вытягиваем массив обектов name
     console.log(name);
 
-  var sortName = _.sortBy(arr, ['name', 'friends']);
+  var sortName = _.sortBy(arr, ['name', 'friends']); // сортируем массив обьектов name в зависимости от колличества friends
     console.log(sortName);
 
-  var result = _.map(sortName, 'name');
+  var result = _.map(sortName, 'name'); // из сортированного массива обьектов friends вытягиваем поля name
     console.log(result);
 	
-  var friends = _.map(arr, 'friends');
+  var friends = _.map(arr, 'friends'); // берём массив обьектов всех friends
     console.log(friends);
 
-  var contFriends = _.flatten(friends);
+  var contFriends = _.flatten(friends); // обьеденяем массив обьектов friends
     console.log(contFriends);
 	
-  var nameFriends = _.map(contFriends, 'name');
+  var nameFriends = _.map(contFriends, 'name'); // берем поля name всех друзей
     console.log(nameFriends);
 });
 	
 	
 	
 	
-
+// тут намудрил!!)) (всплывающие баннеры)
 
 $(document).ready(function() { 
 
 	var $subMit = $('.content-item-articles-item-title');
-		
-
 	
-	 $subMit.on('click', function(e) {
-    $(this).addClass('active').siblings().removeClass('active')
+	$subMit.bind('click', function(e) {
 
+    	$(this).addClass('active').siblings().removeClass('active') // тут получается применить класс active
+    	.closest('.content-item-articles-item-title').removeClass('active') // вот здесь запутался при закрытии нужно его удалить чтоб все в дефолтное состояние вернулось...
 
 		var $banner = $(this).siblings('.banner');
 		$banner.slideToggle()
-    $(this).closest().find('.content-item-articles-item-title').removeClass('active');
+
+
   })
 	}); 
