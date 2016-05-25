@@ -33,6 +33,7 @@ uglify: {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  
 
   // Default task(s).
   grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
