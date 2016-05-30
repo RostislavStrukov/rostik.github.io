@@ -5,8 +5,8 @@
 
 /*WRAPER*/
 body {
-	background: url(../img/fon.jpg);
-	background-repeat: no-repeat center center fixed;
+	background: url(../img/fon.jpg) center center fixed;
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #074c89; 
 	font-family: Helvetica, Arial, Tahoma;
