@@ -27,21 +27,21 @@ form = JSON.parse(form);
 // console.log(form);
 
 // заполнение html DOM елементами
-var tmpl = $('#form-tmpl').html();
-var tmplInsert = _.template(tmpl);
+let tmpl = $('#form-tmpl').html();
+let tmplInsert = _.template(tmpl);
 
 questions.forEach(function (item, i) {
 
 	item.questionIndex = i;
 
-	var html = tmplInsert(item);
+	let html = tmplInsert(item);
 	$('.test-box').append(html);
 });
 
 // Проверка правильности ответов
 $('#test-box-button').click(function (elem) {
 
- 	var resultTest = $('.test-box').serializeArray(); // преобразуем форму в массив и присваеваем в переменную
+ 	let resultTest = $('.test-box').serializeArray(); // преобразуем форму в массив и присваеваем в переменную
 
  	console.log(resultTest);
 
@@ -49,11 +49,11 @@ $('#test-box-button').click(function (elem) {
 
     resultTest.forEach(function (item, i) {
 
-    	var answer = eval(item.name);
+    	let answer = eval(item.name);
     	questions[answer.questionIndex].result = (answer.correct == item.value) ? true : false; // Сравнение правильности ответов
     });
 
-    var testValid = true;
+    let testValid = true;
 
     // Вставка результатов в модальное окно
     questions.forEach(function (item, index) {
@@ -71,14 +71,14 @@ $('#test-box-button').click(function (elem) {
         		break
       }
 
-      var tmplResult = $('#result-tmpl').html();
-  	  var tmplResultInsert = _.template(tmplResult);
-      var html = tmplResultInsert(item);
+      let tmplResult = $('#result-tmpl').html();
+  	  let tmplResultInsert = _.template(tmplResult);
+      let html = tmplResultInsert(item);
 
       $('.modal-list-result').append(html);
     });
 
-    var html = (testValid) ? '<span class="result-text">Тест пройден!</span>' : '<span class="result-text">Тест не пройден</span>'
+    let html = (testValid) ? '<span class="result-text">Тест пройден!</span>' : '<span class="result-text">Тест не пройден</span>'
     $('.modal .modal-footer').append(html);
     $('.modal').show();
 });
