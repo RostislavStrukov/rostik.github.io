@@ -1,6 +1,6 @@
 'use strict';
-
 // данные
+
 var questions = [{
     title: '1.Выберите правильный метод для преобразования объекта в JSON формат:',
     answers: ['parse()', 'stringify()', 'toJSON()'],

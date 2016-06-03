@@ -1,3 +1,4 @@
+'use strict';
 // данные
 var questions = [
 	    {
@@ -22,13 +23,13 @@ $(function() {
 // запись localStorage
 localStorage.setItem('form', JSON.stringify(questions));
 
-let form = localStorage.getItem('form');
+var form = localStorage.getItem('form');
 form = JSON.parse(form);
 // console.log(form);
 
 // заполнение html DOM елементами
-let tmpl = $('#form-tmpl').html();
-let tmplInsert = _.template(tmpl);
+var tmpl = $('#form-tmpl').html();
+var tmplInsert = _.template(tmpl);
 
 questions.forEach(function (item, i) {
 
@@ -53,7 +54,7 @@ $('#test-box-button').click(function (elem) {
     	questions[answer.questionIndex].result = (answer.correct == item.value) ? true : false; // Сравнение правильности ответов
     });
 
-    let testValid = true;
+    var testValid = true;
 
     // Вставка результатов в модальное окно
     questions.forEach(function (item, index) {
@@ -71,14 +72,14 @@ $('#test-box-button').click(function (elem) {
         		break
       }
 
-      let tmplResult = $('#result-tmpl').html();
-  	  let tmplResultInsert = _.template(tmplResult);
-      let html = tmplResultInsert(item);
+      var tmplResult = $('#result-tmpl').html();
+  	  var tmplResultInsert = _.template(tmplResult);
+      var html = tmplResultInsert(item);
 
       $('.modal-list-result').append(html);
     });
 
-    let html = (testValid) ? '<span class="result-text">Тест пройден!</span>' : '<span class="result-text">Тест не пройден</span>'
+    var html = (testValid) ? '<span class="result-text">Тест пройден!</span>' : '<span class="result-text">Тест не пройден</span>'
     $('.modal .modal-footer').append(html);
     $('.modal').show();
 });
