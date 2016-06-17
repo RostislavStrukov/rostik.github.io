@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>JAVASCRIPT</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/tmpl.js"></script>
+	<script data-main="js/app" src="js/require.js"></script>
+</head>
+<body>
+	<script type="text/template" id="wrapper-template">
+		<div class="wraper">
+			<p class="to-do-list">To do list</p>
+			<ol class="item-list"></ol>
+			<div class="controlls">
+				<input type="text" class="item-value">
+				<button class="item-add">Add</button>
+			</div>
+		</div>
+	</script>
+	<script type="text/template" id="list-template">
+		<% for (var i = 0; i < data.length; i++) { %>
+			<li><%=data[i] %><input type="submit" value="x" data-value="<%=data[i] %>" class="item-delete"></input></li>
+		<% }; %>
+	</script>
+ </div>
+</div>
