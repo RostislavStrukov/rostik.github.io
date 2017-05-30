@@ -337,18 +337,20 @@ body {
 		border-bottom: 1px solid #fff;
 		border-top: 1px solid #12191f;
 		box-shadow: 0px 5px 10px 25px rgba(0,0,0,0.75);
-		z-index: 100;
+		z-index: 1;
 	}
 	/*ARTICLE*/
-	.box {
-		background: #f8f8f8;
-		z-index: -20;
-	}
-	.box-container {
+
+	.container-box {
 		height: 785px;
+		z-index: -20;
 		background: #f9f9f9;
 		border-bottom: 1px solid #e6e6e6;
 	}
+	/*.box {
+		background: #f8f8f8;
+		
+	}*/
 	.box-position {
 		padding: 69px 0 0 0;
 	}
