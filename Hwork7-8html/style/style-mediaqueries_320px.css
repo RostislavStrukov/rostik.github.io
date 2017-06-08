@@ -376,6 +376,7 @@ body {
 		margin: 0 0 21px 26px;
 		width: 256px;
 		background: #fff;
+		box-shadow: 0px 1px 3px 0px rgba(112,111,112,0.75);
 	}
 	.box-item-img {
 		position: absolute;
@@ -411,28 +412,29 @@ body {
     	color: #454545;
     	line-height: 24px;
 	}
-	.form-article input {
-		display: none;
+	.box-position input {
+		display: inline-block;
 	}
-	#slider-input__box-input {
+	.box-input {
 		display: table;
 		margin: 0 auto;
 		height: 18px;
 	}
-	#slider-input__box-input label {
+	/*.box-input label {
 		display: inline-block;
-		cursor: pointer;
 		width: 16px;
 		height: 16px;
 		border: 1px solid #e7e7e7;
 		border-radius: 50%;
 		margin: 0 2px 0 2px;
-	}
-	#slider-input__box-input label:hover,
-	#link5:checked ~ #slider-input__box-input label:nth-of-type(1),
-	#link6:checked ~ #slider-input__box-input label:nth-of-type(2),
-	#link7:checked ~ #slider-input__box-input label:nth-of-type(3),
-	#link8:checked ~ #slider-input__box-input label:nth-of-type(4) {
+		cursor: pointer;
+		background: #fff;
+	}*/
+	/*.box-input label:hover,
+	#link5:checked ~ .box-input label:nth-of-type(1),
+	#link6:checked ~ .box-input label:nth-of-type(2),
+	#link7:checked ~ .box-input label:nth-of-type(3),
+	#link8:checked ~ .box-input label:nth-of-type(4) {
 		background-image: url(../img/check-2.png);
 		background-position: center;
 		background-repeat: no-repeat;
@@ -453,14 +455,10 @@ body {
 	#link8:checked ~ .box-item .box-item-text .box-slide-overflow .box-wrapper {
 		margin: 0 0 0 -300%;
 		transition: 1s;
-	}
+	}*/
 	.box-item-post-img {
 		clear: both;
 		float: left;
-	}
-	#slider-input__box-input {
-		display: table;
-		margin: 0 auto;
 	}
 
 	.box-item-post-conteiner {
