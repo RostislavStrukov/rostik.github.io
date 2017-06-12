@@ -10,28 +10,28 @@ body {
 	background-attachment: fixed;
 }
 @font-face {
-    font-family: 'League Gothic Regular';
-    src: url('../font/LeagueGothicRegular/leaguegothic-regular-webfont.woff2') format('woff2'),
-         url('../font/LeagueGothicRegular/leaguegothic-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'League Gothic Regular';
+  src: url('../font/LeagueGothicRegular/leaguegothic-regular-webfont.woff2') format('woff2'),
+       url('../font/LeagueGothicRegular/leaguegothic-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
 	font-family: 'open_sanslight';
-    		src: url('../font/opensanslight/opensans-light-webfont.eot');
-    		src: url('../font/opensanslight/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
-         	url('../font/opensanslight/opensans-light-webfont.woff2') format('woff2'),
-         	url('../font/opensanslight/opensans-light-webfont.woff') format('woff'),
-         	url('../font/opensanslight/opensans-light-webfont.ttf') format('truetype');
+  src: url('../font/opensanslight/opensans-light-webfont.eot');
+  src: url('../font/opensanslight/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+  		 url('../font/opensanslight/opensans-light-webfont.woff2') format('woff2'),
+    	 url('../font/opensanslight/opensans-light-webfont.woff') format('woff'),
+    	 url('../font/opensanslight/opensans-light-webfont.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'open_sanslight';
-    		src: url('../font/opensanslight/opensans-light-webfont.eot');
-    		src: url('../font/opensanslight/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
-         	url('../font/opensanslight/opensans-light-webfont.woff2') format('woff2'),
-         	url('../font/opensanslight/opensans-light-webfont.woff') format('woff'),
-         	url('../font/opensanslight/opensans-light-webfont.ttf') format('truetype');
-         }
+  src: url('../font/opensanslight/opensans-light-webfont.eot');
+  src: url('../font/opensanslight/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+    	 url('../font/opensanslight/opensans-light-webfont.woff2') format('woff2'),
+    	 url('../font/opensanslight/opensans-light-webfont.woff') format('woff'),
+    	 url('../font/opensanslight/opensans-light-webfont.ttf') format('truetype');
+}
 
 @media (min-width: 321px) and (max-width: 480px) {
 
@@ -133,17 +133,26 @@ body {
 	.iphone {
 		display: block;
 		position: absolute;
-		margin: -158px 0 0 260px;
+		margin: -164px 0 0 260px;
 		width: 186px;
-		height: 298px;
+		height: 300px;
 	}
 	.iphone-image {
+		/*position: relative;*/
+
 		width: 186px;
-		height: 298px;
+		height: 302px;
 	}
-	.iphone-link {
-		margin: 80px 0 0 80px;
+	.iphone a {
+		display: block;
+		margin: 96px 0 0 80px;
+		z-index: 20;
 		position: absolute;
+		text-align: center;
+		width: 76px;
+		height: 76px;
+		background: url(../img/play.png) center no-repeat;
+		/*background-attachment: fixed;*/
 	}
 	.slider-item-text {
 		display: none;
@@ -283,7 +292,8 @@ body {
 		height: 598px;
 		border-top: 1px solid #35273c;
 		border-bottom: 1px solid #21333b;
-		box-shadow-bottom: 0px 2px 18px -1px rgba(0,0,0,0.75);
+		overflow: hidden;
+		z-index: 5;
 		background-image: -webkit-linear-gradient(bottom, #322539, #745083);
 		background-image: -moz-linear-gradient(bottom, #322539, #745083);
 		background-image: -o-linear-gradient(bottom, #322539, #745083);
@@ -349,15 +359,18 @@ body {
 		margin: 72px 0 0 0;
 	}
 	.box-line {
+		position: relative;
 		display: block;
 		width: 100%;
 		box-sizing: border-box;
 		border-bottom: 1px solid #fff;
 		border-top: 1px solid #12191f;
-		box-shadow: 0px 2px 6px 1px rgba(0,0,0,0.6);
-		z-index: 1;
+		box-shadow: 0px 2px 8px 2px rgba(0,0,0,0.75);
+		z-index: 2;
 	}
-	/*ARTICLE*/
+
+	/*CONTEINER-BOX*/
+	
 	.box-container {
 		background-color: #f8f8f8;
 	}
@@ -385,6 +398,7 @@ body {
 		margin: 0 0 21px 26px;
 		width: 416px;
 		background: #fff;
+		box-shadow: 0px 1px 3px 0px rgba(112,111,112,0.75);
 	}
 	.box-item-img {
 		position: absolute;
@@ -399,8 +413,8 @@ body {
 	}
 	.box-item-text-item-1 {
 		font-family: 'League Gothic Regular', Tahoma, Arial, sans-serif;
-    	font-weight: normal;
-    	font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 		font-size: 26px;
 		color: #454545;
 		float: left;
@@ -408,20 +422,20 @@ body {
 	}
 	.box-item-text-item-2 {
 		font-family: 'League Gothic Regular', Tahoma, Arial, sans-serif;
-    	font-weight: normal;
-    	font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 		font-size: 26px;
 		color: #edbfff;
 	}
 	.box-item-text-item-3 {
 		font-family: 'open_sanslight', Tahoma, Arial, sans-serif;
-    	font-weight: normal;
-    	font-style: normal;
-    	font-size: 18px;
-    	color: #454545;
-    	line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    color: #454545;
+    line-height: 24px;
 	}
-	.form-article input {
+	.form-text input {
 		display: none;
 	}
 	.box-input {
@@ -513,7 +527,7 @@ body {
     	font-size: 18px;
     	color: #454545;
     	float: right;
-    	padding: 17px 13px 0 0;
+    	padding: 28px 38px 0 0;
 	}
 	.container-box {
 		height: 785px;
@@ -532,7 +546,7 @@ body {
 		margin: 0 auto;
 		width: 480px;
 		height: 200px;
-		background: url(../img/logo480.png) center top no-repeat;
+		background: url(../img/brends480.png) center top no-repeat;
 	}
 	.clear {
 		display: block;
@@ -542,11 +556,11 @@ body {
 	}
 	.article {
 		display: block;
+		position: relative;
 		height: 681px;
 		background-color: #ececec;
-		/*clear: both;*/
 		overflow: hidden;
-		/*z-index: 1;*/
+		z-index: 20;
 	}
 	.article-conteiner {
 		display: block;
@@ -573,6 +587,17 @@ body {
 		color: #787878;
 		font-size: 16px;
 	}
+
+	/*FOOTER*/
+
+	.footer-line {
+		position: relative;
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		border-bottom: 1px solid #fff;
+		box-shadow: 0px 2px 8px 2px rgba(0,0,0,0.75);
+	}
 	.footer {
 		display: block;
 		width: 100%;
@@ -595,11 +620,11 @@ body {
 	.footer-menu-item a {
 		text-decoration: none;
 		font-family: 'League Gothic Regular', Tahoma, Arial, sans-serif;
-		font-weight: bold;
+		font-weight: normal;
 		font-size: 16px;
 		letter-spacing: 2px;
 		color: #fff;
-		/*text-shadow: 1px 0 #0f1518;*/
+		text-shadow: 1px 1px #0f1518;
 	}
 	.footer-menu-item a:hover {
 		text-shadow: 0 1px 8px rgba(255,255,255,.8);
@@ -610,11 +635,11 @@ body {
 		clear: both;
 		margin: 0 auto;
 		font-family: 'open_sanslight', Tahoma, Arial, sans-serif;
-    	font-weight: normal;
-    	font-style: normal;
-    	font-size: 13px;
-    	color: #fff;
-    }
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    color: #fff;
+  }
     #copy-link {
     	text-decoration: none;
     	font-family: 'open_sanslight', Tahoma, Arial, sans-serif;
