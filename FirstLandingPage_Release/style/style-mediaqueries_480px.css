@@ -10,127 +10,172 @@ body {
 	background-attachment: fixed;
 }
 @font-face {
-    font-family: 'League Gothic Regular';
-    src: url('../font/LeagueGothicRegular/leaguegothic-regular-webfont.woff2') format('woff2'),
-         url('../font/LeagueGothicRegular/leaguegothic-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'League Gothic Regular';
+  src: url('../font/LeagueGothicRegular/leaguegothic-regular-webfont.woff2') format('woff2'),
+       url('../font/LeagueGothicRegular/leaguegothic-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
 	font-family: 'open_sanslight';
-    		src: url('../font/opensanslight/opensans-light-webfont.eot');
-    		src: url('../font/opensanslight/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
-         	url('../font/opensanslight/opensans-light-webfont.woff2') format('woff2'),
-         	url('../font/opensanslight/opensans-light-webfont.woff') format('woff'),
-         	url('../font/opensanslight/opensans-light-webfont.ttf') format('truetype');
+  src: url('../font/opensanslight/opensans-light-webfont.eot');
+  src: url('../font/opensanslight/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+  		 url('../font/opensanslight/opensans-light-webfont.woff2') format('woff2'),
+    	 url('../font/opensanslight/opensans-light-webfont.woff') format('woff'),
+    	 url('../font/opensanslight/opensans-light-webfont.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'open_sanslight';
-    		src: url('../font/opensanslight/opensans-light-webfont.eot');
-    		src: url('../font/opensanslight/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
-         	url('../font/opensanslight/opensans-light-webfont.woff2') format('woff2'),
-         	url('../font/opensanslight/opensans-light-webfont.woff') format('woff'),
-         	url('../font/opensanslight/opensans-light-webfont.ttf') format('truetype');
-         }
+  src: url('../font/opensanslight/opensans-light-webfont.eot');
+  src: url('../font/opensanslight/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+    	 url('../font/opensanslight/opensans-light-webfont.woff2') format('woff2'),
+    	 url('../font/opensanslight/opensans-light-webfont.woff') format('woff'),
+    	 url('../font/opensanslight/opensans-light-webfont.ttf') format('truetype');
+}
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 480px) {
 
 	/*HEADER*/
 
 	.wrapper {
-		width: 768px;
+		min-width: 480px;
 		margin: 0 auto;
 		position: relative;
 	}
 	.header {
 		margin: 0 auto;
 		display: block;
-		height: 798px;
+		height: 548px;
 	}
 	.logo {
 		display: block;
-		position: relative;
 		width: 150px;
 		height: 37px;
-		/*margin: 0 0 0 0;*/
-		padding: 70px 0 0 20px;
+		margin: 0 auto;
+		padding: 70px 0 0 0;
 	}
 	.box-menu {
 		display: block;
-		margin: 35px 0 0 0;
+		width: 246px;
+		margin: 30px auto 0;
+		z-index: 1;
 		position: relative;
-		/*clear: both;*/
 	}
 	.menu-show {
-		display: none;
+		display: table;
 	}
 	.menu {
-		display: block;
+		display: none;
+		width: 246px;
+		position: absolute;
+		top: 0;
+		border: 1px solid #0f1a1f;
+		list-style: none;
+		background: rgba(61, 48, 69, 0.9);
+		border-radius: 14px;
 	}
 	.menu-item {
-		list-style: none;
-		display: inline-block;
-		margin: 0 28px 0 20px;
+		border-top: 1px solid #5f486a;
+		border-bottom: 1px solid #36283e;
+		height: 40px;
+	}
+	.menu-item:first-child {
+		border-radius: 14px;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	.menu-item:last-child {
+		border-radius: 14px;
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+	}
+	.menu-show,
+	.menu-item:first-child a {
+		font-family: 'League Gothic Regular', Tahoma, Arial, sans-serif;
+		color: #fff;
+		font-size: 24px;
+		padding: 2px;
+		text-decoration: none;
+		border-bottom: 2px solid #edbfff;
+		display: table;
+		margin: 0 auto;
+		text-shadow: 0px 0px 27px rgba(255, 255, 255, 1);
 	}
 	.menu-item a {
 		font-family: 'League Gothic Regular', Tahoma, Arial, sans-serif;
 		color: #fff;
 		font-size: 24px;
+		padding: 3px;
 		text-decoration: none;
 		display: block;
-		margin: 0 0 0 0;
+		margin: 0 auto;
+		text-decoration: none;
+		text-align: center;
+	}
+	.menu-show:hover+.menu {
+		display: block;
 	}
 	.menu-item a:hover {
 		border-bottom: 2px solid #edbfff;
 		display: table;
-		/*padding: 0 0 2px 0;*/
+		padding: 2px;
 		text-shadow: 0px 0px 27px rgba(255, 255, 255, 1);
 	}
-
+	.menu-item:hover {
+		background: rgba(43,33,50, 0.3);
+	}
+	.box-menu:hover .menu-show {
+		opacity: 0;
+	}
+	.box-menu:hover .menu {
+		display: block;
+	}
 	.iphone {
-		display: none;
+		display: block;
 		position: absolute;
-		margin: -310px 0 0 446px;
-		/*background-image: url(../img/iphone.png);*/
-		width: 266px;
-		height: 432px;
+		margin: -164px 0 0 260px;
+		width: 186px;
+		height: 300px;
 	}
 	.iphone-image {
-		width: 266px;
-		height: 432px;
+		/*position: relative;*/
+
+		width: 186px;
+		height: 302px;
 	}
-	.iphone-link {
-		margin: 145px 0 0 130px;
+	.iphone a {
+		display: block;
+		margin: 96px 0 0 80px;
+		z-index: 20;
 		position: absolute;
+		text-align: center;
+		width: 76px;
+		height: 76px;
+		background: url(../img/play.png) center no-repeat;
+		/*background-attachment: fixed;*/
 	}
 	.slider-item-text {
-		display: block;
-		width: 280px;
-		height: 108px;
-		font-family: 'open_sanslight', Tahoma, Arial, sans-serif;
-		font-size: 16px;
-		color: #fff;
+		display: none;
 	}
 	.box-overlay {
 		display: block;
 		position: absolute;
-		height: 400px;
+		height: 245px;
 		width: 100%;
-		margin: 74px 0 0 0;
+		margin: 204px 0 0 0;
 		background-color: #000000;
 		opacity: 0.2;
 	}
 	.slider {
 		position: relative;
 		display: block;
-		width: 768px;
-		margin: 168px auto 0;
+		width: 480px;
+		margin: 120px auto 0;
 	}
 	.slider-overflow {
 		display: block;
-		width: 768px;
+		width: 480px;
 		overflow: hidden;
-		/* border: 1px solid black; */
 	}
 	.slider-wrapper {
 		width: 400%;
@@ -138,8 +183,8 @@ body {
 	}
 	.slider-item {
 		display: table;
-		width: 728px;
-		padding: 0 0 0 40px;
+		width: 430px;
+		padding: 0 0 0 50px;
 		float: left;
 	}
 	.slider-item-link {
@@ -149,28 +194,26 @@ body {
 	.slider-item-head {
 		text-align: left;
 		font-family: 'League Gothic Regular', Tahoma, Arial, sans-serif;
-		font-size: 44px;
+		font-size: 36px;
 		color: #fefefe;
 	}
 	.slider-item-title {
 		text-align: left;
 		font-family: 'League Gothic Regular', Tahoma, Arial, sans-serif;
-		font-size: 28px;
+		font-size: 16px;
 		color: #edbfff;
 	}
 	.slider-input {
 		display: none;
 		float: left;
 		margin: 0 0 0 0;
-		/*position: absolute;*/
 	}
 	#slider-input__box-arrows {
 		position: absolute;
-		top: 86px;
+		top: 12px;
 		display: block;
 		width: 100%;
 		height: 42px;
-		/* border: 1px solid black; */
 	}
 	#link1:checked ~ #slider-input__box-arrows label:nth-child(2),
 	#link2:checked ~ #slider-input__box-arrows label:nth-child(3),
@@ -179,7 +222,7 @@ body {
 		width: 30px;
 		height: 42px;
 		float: right;
-		margin: 0 -2px 0 0;
+		margin: 0 0 0 0;
 		display: block;
 		background-image: url(../img/arrowright.png);
 		background-repeat: no-repeat;
@@ -192,7 +235,7 @@ body {
 		width: 30px;
 		height: 42px;
 		float: left;
-		margin: 0 0 0 -2px;
+		margin: 0 0 0 0;
 		display: block;
 		background-image: url(../img/arrowleft.png);
 		background-repeat: no-repeat;
@@ -200,7 +243,7 @@ body {
 	}
 	#slider-input__box-radio {
 		display: table;
-		margin: 144px auto 0;
+		margin: 114px auto 0;
 	}
 	#slider-input__box-radio label {
 		cursor: pointer;
@@ -246,10 +289,10 @@ body {
 		overflow: hidden;
 		clear: both;
 		width: 100%;
-		height: 340px;
+		height: 598px;
 		border-top: 1px solid #35273c;
 		border-bottom: 1px solid #21333b;
-		box-shadow-bottom: 0px 2px 18px -1px rgba(0,0,0,0.75);
+		z-index: 5;
 		background-image: -webkit-linear-gradient(bottom, #322539, #745083);
 		background-image: -moz-linear-gradient(bottom, #322539, #745083);
 		background-image: -o-linear-gradient(bottom, #322539, #745083);
@@ -258,9 +301,8 @@ body {
 	}
 	.section-item {
 		display: block;
-		width: 222px;
-		margin: 0 30px 0 0;
-		float: left;
+		width: 440px;
+		margin: 0 auto;
 	}
 	.section-item-image {
 		display: block;
@@ -272,8 +314,8 @@ body {
 	.section-item-text {
 		display: block;
 		float: left;
-		width: 152px;
-		height: 158px;
+		width: 350px;
+		height: 104px;
 		overflow: hidden;
 		margin: 0 0 20px 20px;
 	}
@@ -316,15 +358,18 @@ body {
 		margin: 72px 0 0 0;
 	}
 	.box-line {
+		position: relative;
 		display: block;
 		width: 100%;
 		box-sizing: border-box;
 		border-bottom: 1px solid #fff;
 		border-top: 1px solid #12191f;
-		box-shadow: 0px 2px 6px 1px rgba(0,0,0,0.6);
-		z-index: 1;
+		box-shadow: 0px 2px 8px 2px rgba(0,0,0,0.75);
+		z-index: 2;
 	}
-	/*ARTICLE*/
+
+	/*CONTEINER-BOX*/
+
 	.box-container {
 		background-color: #f8f8f8;
 	}
@@ -333,10 +378,10 @@ body {
 	}
 	.box-slide-overflow {
 		display: block;
-		width: 250px;
+		width: 340px;
 		height: 270px;
 		overflow: hidden;
-		margin: 0 0 0 40px;
+		margin: 0 auto 0;
 	}
 	.box-wrapper {
 		display: block;
@@ -344,14 +389,15 @@ body {
 		height: 270px;
 	}
 	.box-item {
-		width: 300px;
+		width: 436px;
 		display: block;
-		margin: 34px 0 0 20px;
+		margin: 0 0 0 10px;
 	}
 	.box-item-text {
 		margin: 0 0 21px 26px;
-		width: 290px;
+		width: 416px;
 		background: #fff;
+		box-shadow: 0px 1px 3px 0px rgba(112,111,112,0.75);
 	}
 	.box-item-img {
 		position: absolute;
@@ -359,42 +405,37 @@ body {
 	}
 	.box-item-text-item {
 		margin: 21px 0 0 0;
-		width: 250px;
+		width: 340px;
 		float: left;
-		height: 205px;
+		height: 225px;
 		overflow: hidden;
-		/* padding: 0 3px 0 0; */
 	}
 	.box-item-text-item-1 {
 		font-family: 'League Gothic Regular', Tahoma, Arial, sans-serif;
-    	font-weight: normal;
-    	font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 		font-size: 26px;
 		color: #454545;
-		/*float: left;*/
+		float: left;
 		margin: 0 10px 0 0;
 	}
 	.box-item-text-item-2 {
 		font-family: 'League Gothic Regular', Tahoma, Arial, sans-serif;
-    	font-weight: normal;
-    	font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 		font-size: 26px;
 		color: #edbfff;
 	}
 	.box-item-text-item-3 {
 		font-family: 'open_sanslight', Tahoma, Arial, sans-serif;
-    	font-weight: normal;
-    	font-style: normal;
-    	font-size: 18px;
-    	color: #454545;
-    	line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    color: #454545;
+    line-height: 24px;
 	}
-	.form-article input {
+	.form-text input {
 		display: none;
-	}
-	.form-article {
-		float: left;
-		width: 320px;
 	}
 	.box-input {
 		display: table;
@@ -409,6 +450,7 @@ body {
 		border: 1px solid #e7e7e7;
 		border-radius: 50%;
 		margin: 0 2px 0 2px;
+		background: #fff;
 	}
 	.box-input label:hover,
 	#link5:checked ~ .box-input label:nth-of-type(1),
@@ -442,19 +484,18 @@ body {
 	}
 	.box-input {
 		display: table;
-		margin: 0 0 0 155px;
+		margin: 0 auto;
 	}
 
 	.box-item-post-conteiner {
-		width: 354px;
-		margin: 0 0 0 80px;
-		float: left;
+		width: 460px;
+		margin: 0 auto;
 	}
 	.box-item-post-conteiner-head {
-		margin: 44px 0 5px -4px;
+		margin: 44px 0 5px 15px;
 		font-family: 'League Gothic Regular', Tahoma, Arial, sans-serif;
-    	font-weight: normal;
-    	font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 		font-size: 30px;
 	}
 	.box-item-post-img {
@@ -462,15 +503,15 @@ body {
 	}
 	.box-item-post-text-1 {
 		font-family: 'open_sanslight', Tahoma, Arial, sans-serif;
-    	font-weight: bold;
-    	font-style: bold;
-    	font-size: 18px;
+    font-weight: bold;
+    font-style: bold;
+    font-size: 18px;
 	}
 	.box-item-post-text-2 {
 		font-family: 'open_sanslight', Tahoma, Arial, sans-serif;
-    	font-weight: normal;
-    	font-style: normal;
-    	font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
 	}
 	.box-item-post-link {
 		margin: 19px 0 0 6px;
@@ -481,32 +522,31 @@ body {
 	.box-item-post-link-bottom {
 		text-decoration: none;
 		font-family: 'League Gothic Regular', Tahoma, Arial, sans-serif;
-    	font-weight: normal;
-    	font-style: normal;
-    	font-size: 18px;
-    	color: #454545;
-    	float: right;
-    	padding: 17px 13px 0 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    color: #454545;
+    float: right;
+    padding: 28px 38px 0 0;
 	}
 	.container-box {
-		height: 485px;
+		height: 785px;
 		background: #f9f9f9;
 		border-bottom: 1px solid #e6e6e6;
 	}
 	.logos-conteiner {
 		display: block;
 		background-color: #f8f8f8;
-		padding: 32px 0 32px 0;
+		padding: 32px 0 0 0;
 		border-top: 1px solid #fff;
 		border-bottom: 1px solid #e6e6e6;
 		overflow: hidden;
 	}
 	.logos {
 		margin: 0 auto;
-		width: 726px;
-		height: 60px;
-		background: url(../img/logos.png) center top no-repeat;
-		background-size: 100% 100%;
+		width: 480px;
+		height: 200px;
+		background: url(../img/brends480.png) center top no-repeat;
 	}
 	.clear {
 		display: block;
@@ -516,17 +556,17 @@ body {
 	}
 	.article {
 		display: block;
-		height: 396px;
+		position: relative;
+		height: 681px;
 		background-color: #ececec;
-		/*clear: both;*/
 		overflow: hidden;
-		/*z-index: 1;*/
+		z-index: 20;
 	}
 	.article-conteiner {
 		display: block;
-		width: 736px;
+		width: 440px;
 		margin: 0 auto;
-		/*padding: 20px 0 0 0;*/
+		padding: 20px 0 0 0;
 		overflow: hidden;
 	}
 	.article-item-1,
@@ -534,12 +574,8 @@ body {
 		display: none;
 	}
 	.article-item-3 {
-		display: block;
-		width: 200px;
-		height: 180px;
-		float: left;
-		overflow: hidden;
-		margin: 94px 10px 0 32px;
+		display: table;
+		margin: 60px 0 0 0;
 	}
 	.article-item-head {
 		font-family: 'League Gothic Regular', Tahoma, Arial, sans-serif;
@@ -551,20 +587,21 @@ body {
 		color: #787878;
 		font-size: 16px;
 	}
-/*	.box-line-footer {
+
+	/*FOOTER*/
+
+	.footer-line {
+		position: relative;
 		display: block;
 		width: 100%;
 		box-sizing: border-box;
-		border-top: 1px solid #ececec;
-		border-bottom: 1px solid #ececec;
-		box-shadow: 0px 2px 6px 1px rgba(0,0,0,0.6);
-		z-index: 2;
-	}*/
+		border-bottom: 1px solid #fff;
+		box-shadow: 0px 2px 8px 2px rgba(0,0,0,0.75);
+	}
 	.footer {
 		display: block;
 		width: 100%;
 		height: 201px;
-		/*overflow: hidden;*/
 		background: url(../img/footer320.png) center no-repeat;
 	}
 	.footer-conteiner {
@@ -572,22 +609,22 @@ body {
 		padding: 46px 0 0 0
 	}
 	.footer-menu {
-		margin: 0 0 0 5px;
+		margin: 0 auto;
 		display: table;
 		height: 20px;
 	}
 	.footer-menu-item {
 		float: left;
-		margin: 0 22px 0 15px;
+		margin: 0 10px 0 10px;
 	}
 	.footer-menu-item a {
 		text-decoration: none;
 		font-family: 'League Gothic Regular', Tahoma, Arial, sans-serif;
-		font-weight: bold;
-		font-size: 20px;
-		letter-spacing: 1px;
+		font-weight: normal;
+		font-size: 16px;
+		letter-spacing: 2px;
 		color: #fff;
-		text-shadow: 1px 0 #0f1518;
+		text-shadow: 1px 1px #0f1518;
 	}
 	.footer-menu-item a:hover {
 		text-shadow: 0 1px 8px rgba(255,255,255,.8);
@@ -596,14 +633,13 @@ body {
 		padding: 39px 0 0 1px;
 		display: table;
 		clear: both;
-		float: right;
-		margin: 24px 22px 0 0;
+		margin: 0 auto;
 		font-family: 'open_sanslight', Tahoma, Arial, sans-serif;
-    	font-weight: normal;
-    	font-style: normal;
-    	font-size: 13px;
-    	color: #fff;
-    }
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    color: #fff;
+  }
     #copy-link {
     	text-decoration: none;
     	font-family: 'open_sanslight', Tahoma, Arial, sans-serif;
