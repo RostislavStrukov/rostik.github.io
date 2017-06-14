@@ -1,5 +1,5 @@
 
-First Responsive of all my Landing Page :)
+First Responsive of all my Landing Pages :)
 
 Extensions versions:
 1. from 100px to 320px - mobile version,
