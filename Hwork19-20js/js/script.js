@@ -275,10 +275,10 @@ var data = [
 ]
 
 $(function(){
-	
+
   var str = JSON.stringify(data); // сохранение массива в str JSON
-	 console.log(str); 
-		
+	 console.log(str);
+
   var arr = JSON.parse(str); // превращение str JSON в JS массив
 		console.log(arr);
 
@@ -299,34 +299,42 @@ $(function(){
 
   var result = _.map(sortName, 'name'); // из сортированного массива обьектов friends вытягиваем поля name
     console.log(result);
-	
+
   var friends = _.map(arr, 'friends'); // берём массив обьектов всех friends
     console.log(friends);
 
   var contFriends = _.flatten(friends); // обьеденяем массив обьектов friends
     console.log(contFriends);
-	
+
   var nameFriends = _.map(contFriends, 'name'); // берем поля name всех друзей
     console.log(nameFriends);
 });
-	
-	
-	
-	
-// тут намудрил!!)) (всплывающие баннеры)
 
-$(document).ready(function() { 
+
+
+
+$(document).ready(function() {
 
 	var $subMit = $('.content-item-articles-item-title');
-	
-	$subMit.bind('click', function(e) {
 
-    	$(this).addClass('active').siblings().removeClass('active') // тут получается применить класс active
-    	.closest('.content-item-articles-item-title').removeClass('active') // вот здесь запутался при закрытии нужно его удалить чтоб все в дефолтное состояние вернулось...
+  $subMit.click(function() {
+    $(this).toggleClass('active').next()[$(this).next().slideToggle(
+       function() {
+      $('.active').children('.click').html('-')
+    }
 
-		var $banner = $(this).siblings('.banner');
-		$banner.slideToggle()
-
+  )]
+    // .find('.click').html('-');
 
   })
-	}); 
+	// $subMit.bind('click', function(e) {
+  //
+  //   	$(this).addClass('active').siblings().removeClass('active') // тут получается применить класс active
+  //   	.closest('.content-item-articles-item-title').removeClass('active') // вот здесь запутался при закрытии нужно его удалить чтоб все в дефолтное состояние вернулось...
+  //
+	// 	var $banner = $(this).siblings('.banner');
+	// 	$banner.slideToggle()
+  //
+  //
+  // })
+	});
