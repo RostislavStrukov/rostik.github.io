@@ -311,8 +311,6 @@ $(function(){
 });
 
 
-
-
 $(document).ready(function() {
 
 	var $subMit = $('.content-item-articles-item-title');
@@ -320,21 +318,11 @@ $(document).ready(function() {
   $subMit.click(function() {
     $(this).toggleClass('active').next()[$(this).next().slideToggle(
        function() {
-      $('.active').children('.click').html('-')
-    }
+         $('.active').children('.click').html('-');
+       });
+    ]
 
-  )]
-    // .find('.click').html('-');
+    $('.click').html('+');
 
-  })
-	// $subMit.bind('click', function(e) {
-  //
-  //   	$(this).addClass('active').siblings().removeClass('active') // тут получается применить класс active
-  //   	.closest('.content-item-articles-item-title').removeClass('active') // вот здесь запутался при закрытии нужно его удалить чтоб все в дефолтное состояние вернулось...
-  //
-	// 	var $banner = $(this).siblings('.banner');
-	// 	$banner.slideToggle()
-  //
-  //
-  // })
-	});
+  });
+});
