@@ -149,10 +149,26 @@
 		background: #3f4043;
 		border: 1px solid #000;
 		padding: 0 0 0 5px;
+
 	}
 }
 .carusel-box {
   position: relative;
+
+  .text-label_head {
+
+  }
+  .text-label_bottom {
+    
+  }
+}
+.text-label_head {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 .article-conteiner {
 	display: table;
@@ -360,9 +376,6 @@
 				color: $color-blue;
 			}
 		}
-	}
-	.content-item-articles-cinteiner {
-
 	}
 	.content-item-articles {
 		float: left;
