@@ -270,10 +270,9 @@ body {
 		margin: 6px 22px 0 11px;
 	}
 	.section-item-text {
-		display: block;
+		display: table;
 		float: left;
 		width: 230px;
-		height: 162px;
 		overflow: hidden;
 		margin: 0 0 0 0;
 	}
