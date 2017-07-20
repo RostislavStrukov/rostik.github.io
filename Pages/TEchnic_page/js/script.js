@@ -319,7 +319,7 @@ $(document).ready(function() {
     $(this).toggleClass('active').next()[$(this).next().slideToggle(
        function() {
          $('.active').children('.click').html('-');
-       });
+       })
     ]
 
     $('.click').html('+');
