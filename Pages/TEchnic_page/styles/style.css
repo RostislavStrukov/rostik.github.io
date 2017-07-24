@@ -4,11 +4,13 @@
 
 .wraper {
   margin: 0 auto;
-  width: 1160px; }
+  width: 100%; }
 
 .header {
   display: block;
-  overflow: hidden; }
+  width: 1160px;
+  overflow: hidden;
+  margin: 0 auto; }
 
 .header-item {
   display: block; }
@@ -126,32 +128,39 @@
     padding: 0 0 0 5px; }
 
 .carusel-box {
-  position: relative; }
+  position: relative;
+  width: 1160px;
+  margin: 0 auto; }
   .carusel-box .box-label {
     display: table;
     position: absolute;
-    margin: 0 0 0 0;
+    margin: 250px 0 0 34px;
     z-index: 5; }
     .carusel-box .box-label .text-label_head {
       position: relative;
       display: table;
       background-color: rgba(0, 0, 0, 0.6);
       margin: 0 0 0 0;
-      padding: 0 0 0 0;
+      padding: 16px 22px 0 22px;
       font-family: Ubuntu;
       font-weight: bold;
       color: #f3b60e;
-      font-size: 38px; }
+      font-size: 50px; }
     .carusel-box .box-label .text-label_bottom {
       position: relative;
-      display: table;
-      background-color: rgba(0, 0, 0, 0.6);
       margin: 0 0 0 0;
-      padding: 0 0 0 0;
       font-family: Ubuntu;
       font-weight: bold;
       color: #fff;
-      font-size: 38px; }
+      font-size: 50px; }
+      .carusel-box .box-label .text-label_bottom p:first-child {
+        display: table;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 0 32px 0 22px; }
+      .carusel-box .box-label .text-label_bottom p:last-child {
+        display: table;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 8px 26px 12px 22px; }
 
 .article-conteiner {
   display: table;
@@ -203,8 +212,14 @@
 .middle {
   display: block;
   background: #2a2d32;
+  width: 100%;
   height: 500px;
   overflow: hidden; }
+  .middle .middle-conteiner {
+    display: block;
+    width: 1160px;
+    margin: 0 auto;
+    height: 500px; }
   .middle .middle-title {
     display: table;
     margin: 40px 0 58px 25px;
@@ -252,7 +267,8 @@
 
 .content {
   display: table;
-  margin: 0 0 160px 0; }
+  width: 1160px;
+  margin: 0 auto 160px; }
   .content .content-item-title {
     margin: 56px 0 48px 40px;
     font-family: Ubuntu;
@@ -319,7 +335,8 @@
         color: #3595ec; }
   .content .content-item-articles {
     float: left;
-    width: 550px; }
+    width: 550px;
+    margin: 0 0 0 10px; }
     .content .content-item-articles .content-item-articles-title {
       display: block;
       margin: -76px 0 46px 0;
@@ -373,56 +390,68 @@
   display: table;
   margin: 100px auto; }
 
-.footer .footer-conteiner-blocks {
+.footer {
   height: 325px;
   background: #2a2d32; }
-  .footer .footer-conteiner-blocks .block {
+  .footer .footer-conteiner-blocks {
     display: block;
-    width: 250px;
-    float: left;
-    margin: 60px 0 0 30px; }
-    .footer .footer-conteiner-blocks .block p {
-      margin: 0 0 45px 0;
-      color: #fff;
-      font-size: 16px; }
-    .footer .footer-conteiner-blocks .block a {
+    width: 1160px;
+    height: 320px;
+    margin: 0 auto;
+    clear: both; }
+    .footer .footer-conteiner-blocks .block {
       display: block;
-      height: 35px;
-      width: 100%;
-      text-decoration: none;
-      line-height: 35px;
-      color: #828385;
-      font-size: 14px;
-      border-bottom: 1px solid #3e4043; }
-    .footer .footer-conteiner-blocks .block a:hover {
-      color: #3595ec; }
-.footer .contacts {
-  display: block;
-  height: 60px;
-  background: #35383c; }
-  .footer .contacts .contacts-item {
-    display: table;
-    float: left;
-    margin: 25px 0 0 40px; }
-    .footer .contacts .contacts-item .icon {
+      width: 250px;
+      float: left;
+      margin: 60px 0 0 30px; }
+      .footer .footer-conteiner-blocks .block p {
+        margin: 0 0 45px 0;
+        color: #fff;
+        font-size: 16px; }
+      .footer .footer-conteiner-blocks .block a {
+        display: block;
+        height: 35px;
+        width: 100%;
+        text-decoration: none;
+        line-height: 35px;
+        color: #828385;
+        font-size: 14px;
+        border-bottom: 1px solid #3e4043; }
+      .footer .footer-conteiner-blocks .block a:hover {
+        color: #3595ec; }
+  .footer .contacts {
+    display: block;
+    height: 60px;
+    margin: 0 0 0 0;
+    background: #35383c; }
+    .footer .contacts .contacts-conteiner {
+      display: block;
+      width: 1160px;
+      height: 60px;
+      margin: 0 auto; }
+    .footer .contacts .contacts-item {
       display: table;
       float: left;
-      margin: 2px 0 0 0; }
-    .footer .contacts .contacts-item p {
+      margin: 25px 0 0 40px; }
+      .footer .contacts .contacts-item .icon {
+        display: table;
+        float: left;
+        margin: 2px 0 0 0; }
+      .footer .contacts .contacts-item p {
+        display: table;
+        float: left;
+        font-size: 14px;
+        color: #5d6063;
+        font-family: Ubuntu;
+        margin: 0 0 0 10px;
+        font-weight: bold; }
+    .footer .contacts .copy {
       display: table;
-      float: left;
+      float: right;
       font-size: 14px;
       color: #5d6063;
       font-family: Ubuntu;
-      margin: 0 0 0 10px;
+      margin: 25px 40px 0 0;
       font-weight: bold; }
-  .footer .contacts .copy {
-    display: table;
-    float: right;
-    font-size: 14px;
-    color: #5d6063;
-    font-family: Ubuntu;
-    margin: 25px 40px 0 0;
-    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
