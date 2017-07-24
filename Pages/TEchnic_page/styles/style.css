@@ -127,14 +127,31 @@
 
 .carusel-box {
   position: relative; }
-
-.text-label_head {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  margin: 0 0 0 0;
-  padding: 0 0 0 0; }
+  .carusel-box .box-label {
+    display: table;
+    position: absolute;
+    margin: 0 0 0 0;
+    z-index: 5; }
+    .carusel-box .box-label .text-label_head {
+      position: relative;
+      display: table;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      font-family: Ubuntu;
+      font-weight: bold;
+      color: #f3b60e;
+      font-size: 38px; }
+    .carusel-box .box-label .text-label_bottom {
+      position: relative;
+      display: table;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      font-family: Ubuntu;
+      font-weight: bold;
+      color: #fff;
+      font-size: 38px; }
 
 .article-conteiner {
   display: table;
