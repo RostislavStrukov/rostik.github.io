@@ -17,5 +17,8 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^1.2.0",
     "load-grunt-tasks": "^3.5.0"
+  },
+  "dependencies": {
+    "masonry-layout": "^4.2.0"
   }
 }

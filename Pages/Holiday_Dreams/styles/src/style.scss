@@ -2,7 +2,7 @@
 
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 @media (min-width: 100px) and (max-width: 321px) {
@@ -10,7 +10,7 @@
 		width: 100%;
 		height: 540px;
 		overflow: hidden;
-		background: url(../img/background.jpg);
+		background: url(../../img/background.jpg);
 		background-repeat: no-repeat;
 		background-position: center top;
 		background-size: auto 100%;
@@ -83,7 +83,7 @@
 			overflow: hidden;
 			position: relative;
 			margin: 0 auto 10px;
-	
+
 				.box-1,
 				.box-2,
 				.box-3 {
@@ -123,13 +123,13 @@
 				}
 			}
 			.box-1 {
-				background: url(../img/background-box-1.jpg);
+				background: url(../../img/background-box-1.jpg);
 			}
 			.box-2 {
-				background: url(../img/background-box-2.jpg);
+				background: url(../../img/background-box-2.jpg);
 			}
 			.box-3 {
-				background: url(../img/background-box-3.jpg);
+				background: url(../../img/background-box-3.jpg);
 			}
 	}
 	.middle {
@@ -217,10 +217,10 @@
 				display: block;
 				width: 100%;
 				height: 100%;
-				
+
 			}
 			.title-image {
-				color: $color-white; 
+				color: $color-white;
 				// position: absolute;
 				display: table;
 				font-style: $font-montserrat-bold;
@@ -313,11 +313,13 @@
 }
 
 @media (min-width: 321px) and (max-width: 761px) {
+
+
 	.header {
 		width: 100%;
 		height: 700px;
 		overflow: hidden;
-		background: url(../img/background.jpg);
+		background: url(../../img/background.jpg);
 		background-repeat: no-repeat;
 		background-position: center top;
 
@@ -399,7 +401,7 @@
 				width: 30px;
 				height: 56px;
 				position: relative;
-				
+
 				img {
 					width: 30px;
 					height: 56px;
@@ -408,7 +410,7 @@
 			.box-control-next {
 				float: right;
 				margin: -300px 20px 0 0;
-				
+
 			}
 			.box-control-prev {
 				float: left;
@@ -456,15 +458,15 @@
 				}
 			}
 			.box-1 {
-				background: url(../img/background-box-1-760.jpg);
+				background: url(../../img/background-box-1-760.jpg);
 				float: left;
 			}
 			.box-2 {
-				background: url(../img/background-box-2-760.jpg);
+				background: url(../../img/background-box-2-760.jpg);
 				float: left;
 			}
 			.box-3 {
-				background: url(../img/background-box-3-760.jpg);
+				background: url(../../img/background-box-3-760.jpg);
 				float: left;
 			}
 		}
@@ -539,7 +541,7 @@
 		.tablet-box {
 			height: 900px;
 			display: block;
-			width: 750px;
+			width: 1000px;
 			margin: 0 auto;
 		}
 		.item {
@@ -557,10 +559,10 @@
 				display: block;
 				width: 100%;
 				height: 100%;
-				
+
 			}
 			.title-image {
-				color: $color-white; 
+				color: $color-white;
 				// position: absolute;
 				display: table;
 				font-style: $font-montserrat-bold;
@@ -674,11 +676,12 @@
 }
 
 @media (min-width: 762px) and (max-width: 5000px) {
+
 	.header {
 		width: 100%;
 		height: 700px;
 		overflow: hidden;
-		background: url(../img/background.jpg);
+		background: url(../../img/background.jpg);
 		background-repeat: no-repeat;
 		background-position: center top;
 
@@ -760,7 +763,7 @@
 				width: 30px;
 				height: 56px;
 				position: absolute;
-				
+
 				img {
 					width: 30px;
 					height: 56px;
@@ -769,7 +772,7 @@
 			.box-control-next {
 				float: right;
 				margin: -300px 0 0 180px;
-				
+
 			}
 			.box-control-prev {
 				float: left;
@@ -817,15 +820,15 @@
 				}
 			}
 			.box-1 {
-				background: url(../img/background-box-1-760.jpg);
+				background: url(../../img/background-box-1-760.jpg);
 				float: left;
 			}
 			.box-2 {
-				background: url(../img/background-box-2-760.jpg);
+				background: url(../../img/background-box-2-760.jpg);
 				float: left;
 			}
 			.box-3 {
-				background: url(../img/background-box-3-760.jpg);
+				background: url(../../img/background-box-3-760.jpg);
 				float: left;
 			}
 		}
@@ -897,39 +900,55 @@
 			text-align: center;
 		}
 		.tablet-box {
-			height: 970px;
+			height: 1000px;
 			display: block;
-			width:940px;
+			width:1000px;
 			margin: 0 auto;
-		}
-		.item {
-			display: block;
-			float: left;
-			width: 300px;
-			height: 300px;
-			border: 1px solid #fff;
-			border-radius: 5px;
-			position: relative;
-			margin: 10px 5px 0 5px;
-			overflow: hidden;
 
-			.image {
-				display: block;
-				width: 100%;
-				height: 100%;
-				
-			}
-			.title-image {
-				color: $color-white; 
-				// position: absolute;
-				display: table;
-				font-style: $font-montserrat-bold;
-				z-index: 9999;
-				font-size: 22px;
-				margin: -80px auto 0;
-				text-align: center;
-				width: 200px;
-			}
+      .grid {
+        background: #EEE;
+        max-width: 980px;
+
+        .grid-item {
+          display: block;
+          width: 300px;
+          height: 310px;
+          float: left;
+          background: #D26;
+          border: 2px solid #333;
+          border-color: hsla(0, 0%, 0%, 0.5);
+          border-radius: 5px;
+        }
+          .grid-item--width2 {
+            width: 620px;
+          }
+
+          .image {
+             display: block;
+             width: 100%;
+             height: 100%;
+             overflow: hidden;
+
+           }
+           .title-image {
+             color: $color-white;
+             position: absolute;
+             display: table;
+             font-style: $font-montserrat-bold;
+             z-index: 9999;
+             font-size: 22px;
+             margin: -80px auto 0;
+             text-align: center;
+             width: 200px;
+           }
+      }
+
+    /* clearfix */
+      .grid:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
 		}
 	}
 	.conteiner-form {
